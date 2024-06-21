@@ -1,7 +1,7 @@
 import React, { createContext, useState } from 'react'
 import "./App.css"
 import Left from './components/Left'
-import Right from './components/Right'
+import Right from "./components/Right"
 
 
 import { data } from "./components/Data"
