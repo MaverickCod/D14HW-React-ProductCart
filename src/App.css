@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+  width: 90%;
+  margin: 2% auto;
+}
+
+.left{
+
+  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border: 2px solid rgb(212, 209, 209);
+  background-image: linear-gradient(to right, #c1c161 0%, #c1c161 0%, #d4d4b1 100%);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+
+}
+h2{
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: Reddit Mono , sans-serif;
+}
+
+.right{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border: 2px solid rgb(212, 209, 209);
+  padding: 1rem 2rem;
+  width: 40%;
+  /* height: 500px; */
+  background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.item-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+ border-radius: 10px;
+  margin: 1rem auto;
+  padding: 1rem 3rem;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.items{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  font-family: Outfit , sans-serif;
+  
+}
+.items h4{
+  font-size: 26px;
+  margin-bottom: 0.25rem;
+}
+.items p{
+  font-size: 18px;
+  margin-bottom: 0.15rem;
+}
+.items a{
+  color: blue;
+  text-decoration: none;
+}
+.img{
+  width: 100px;
+}
+.img img{
+  width: 100%;
+}
+
+.counter span{
+  vertical-align: text-bottom;
+  font-size: 18px;
+  margin: 0px 8px;
+
+}
+
+
+.cart-item{
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: Outfit , sans-serif;
+  margin-bottom: 1rem;
+  background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+ background-blend-mode: normal,color-burn;
+  border-radius: 10px;
+
+}
+.cart-info{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-weight: 500;
+
+}
+.cart-info img{
+  width: 80px;
+}
+.cart-quantity{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.cart-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+
+}
+
+.total-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 10px;
+
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: Reddit Mono , sans-serif;
+  background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+ background-blend-mode: normal,color-burn;
+}
+.refresh{
+  text-align: center;
+  font-size: 22px;
+  font-family: Reddit Mono , sans-serif;
+  color: #c43a30;
+}
+.refresh-card{
+  text-align: center;
+  font-size: 26px;
+  font-family: Reddit Mono , sans-serif;
+  color: #d1cdcd;
+  margin-top: 20%;
+}
+
+@media screen and (max-width:1450px) {
+  .wrapper{
+    padding: 1rem;
+  }
+  .left{
+    width: 55%;
+  }
+  .right{
+    width: 40%;
+  }
+}
+@media screen and (max-width:1250px) {
+  .wrapper{
+    padding: 0.5rem;
+  }
+  
+.item-container{
+  padding: 1rem;
+}
+  .left{
+    width: 58%;
+  }
+
+}
+@media screen and (max-width:1050px) {
+  .wrapper{
+    padding: 0px;
+    width: 100%;
+  }
+  
+.item-container{
+  padding: 1rem;
+}
+  .left{
+    width: 58%;
+    padding: 1rem;
+  }
+  .right{
+    padding: 1rem;
+  }
+
+}
+@media screen and (max-width:850px) {
+  .wrapper{
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+
+  .left{
+    width: 100%;
+
+  }
+  .right{
+    width: 100%;
+  }
+  .cart-item {
+    padding: 0.5rem;
+  }
+  .item-container {
+    padding: 0.5rem;
+  }
+  .items{
+    gap: 0.5rem;
+  }
+  .items h4{
+    font-size: 18px;
+  }
+  .img{
+    width: 80px;
+  }
+}
